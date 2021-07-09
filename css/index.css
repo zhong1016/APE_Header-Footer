@@ -61,7 +61,7 @@ header {
 
 .menu-ul {
   height: 0;
-  background-color: rgba(245, 222, 179, .8);
+  background-color: rgba(245, 222, 179, 0.8);
   transition: 0.2s;
   overflow: hidden;
   position: absolute;
@@ -70,7 +70,24 @@ header {
   left: -20%;
   margin-top: 10%;
 }
+.a1:hover {
+  color: sienna;
+}
 
+.a1::after {
+  content: '';
+  width: 0%;
+  height: 1px;
+  background-color: sienna;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  transition: all .3s linear;
+}
+
+.a1:hover:after {
+  width: 100%;
+}
 .a2 {
   width: 100px;
   height: 24px;
@@ -84,12 +101,6 @@ header {
   height: 18px;
   top: 5%;
 }
-
-
-
-
-
-
 
 .shop {
   height: 2rem;
@@ -244,13 +255,13 @@ footer p {
     width: 1200px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199.98px){
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .header-div,
   .footer-div {
     width: 990px;
   }
 }
-@media (min-width:768px) and (max-width: 991.98px){
+@media (min-width: 768px) and (max-width: 991.98px) {
   .header-div {
     width: 100%;
   }
@@ -415,9 +426,6 @@ footer p {
     height: 40px;
     width: 40px;
   }
-
-
-
 }
 @media (min-width: 320px) and (max-width: 539.98px) {
   .header-div {
@@ -509,4 +517,3 @@ footer p {
     font-size: 15px;
   }
 }
-
